@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/83e3f05aac.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media_query.css">
+    <link rel="stylesheet" href="lightbox.css">
+    <script src="script.js"></script>
+    <script src="lightbox-plus-jquery.js"></script>
+
+    <title>Gokul</title>
+    <style>
+        
+
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+
+        
+    
+        <div class="options-icon" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <div class="logo">
+            <img src="images/Abhiruchi Gokul English logo.png" alt="Logo">
+        </div>
+        
+        <div class="social-icons">
+            <!-- <i class="fa-solid fa-phone"></i>
+            <a href="tel:+918048890509" class="phone-number-top">+918048890509</a> -->
+            <a href="https://www.facebook.com/abhiruchigokulrestaurant/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/abhiruchi_gokul_restaurant/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+           <a href="https://wa.me/9922190221" target="_blank"><i class="fa-brands fa-whatsapp"></i></a> 
+           
+        </div>
+        <!-- <img src="static/images/Rainbow.png" alt=""> -->
+    </div>
+
+    
+
+    <div class="background-container" id="background-container">
+        <div class="background-image">
+            <div class="order-now-container">
+                <a href="menu.html"><button class="order-now-button">Menu Card</button></a>
+            </div>
+        </div>
+        <!-- <div class="text-overlay">
+            <span class="constant-text">Welcome to</span>
+            <span class="changing-text">Rainbow Hotel</span>
+        </div> -->
+    </div>
+<hr>
+    
+
+
+<div class="overlay" onclick="closeMenu()"></div>
+
+
+
+
+
+    
+
+<div class="options">
+    <div class="close-icon" onclick="closeMenu()">X</div>
+   
+    <a href="/">Home</a>
+    <a href="/login">Digital Menu</a>
+    <ul class="sub-menu">
+        <li><a href="#" onclick="openMenuItem('Menu0',0)">APPETIZERS</a></li>
+        <li><a href="#" onclick="openMenuItem('Menu1',1)">SNACKS & DRINKS</a></li>
+        <li><a href="#" onclick="openMenuItem('Menu2',2)">SOUP</a></li>
+        <li><a href="#" onclick="openMenuItem('Menu3',3)">STARTER</a></li>
+        <li><a href="#" onclick="openMenuItem('Menu4',4)">TANDOOR STARTERS</a></li>
+        <li><a href="#" onclick="openMenuItem('Menu5',5)">MAIN COURSE</a></li>
+        <li><a href="#" onclick="openMenuItem('Menu6',6)">INDIAN BREAD</a></li>
+        <li><a href="#" onclick="openMenuItem('Menu7',7)">SALAD & RAITA</a></li>
+        <li><a href="#" onclick="openMenuItem('Menu8',8)">RICE & BIRYANI</a></li>
+        <li><a href="#" onclick="openMenuItem('Menu9',9)">CHINESE RICE & NOODLE</a></li>
+        <li><a href="#" onclick="openMenuItem('Menu10',10)">PIZZA & PASATA</a></li>
+        <li><a href="#" onclick="openMenuItem('Menu11',11)">DESSERT</a></li>
+        <li><a href="#" onclick="openMenuItem('Menu12',12)">MILKSHAKE, MASTANI & MOCKTAIL</a></li>
+    </ul>
+    <!-- <a href="#">QR Code</a> -->
+    <!-- <a href="/signup">Account</a> -->
+</div>
+
+<div class="gallery-container">
+    <h1><span style="padding-left: 300px; font-size: 60px;">Gallary</span></h1>
+    <div class="gallery-row">
+        <div class="gallery-img">
+            <a href="images/SOUP.jpg" data-lightbox="models">
+                <img src="images/SOUP.jpg" alt="Image 1">
+            </a>
+        </div>
+        <div class="gallery-img">
+            <a href="images/MILKSHAKE, MASTANI & MOCKTAIL.jpg" data-lightbox="models">
+                <img src="images/MILKSHAKE, MASTANI & MOCKTAIL.jpg" alt="Image 1">
+            </a>
+        </div>
+        <div class="gallery-img">
+            <a href="images/MAIN COURSE.avif" data-lightbox="models">
+                <img src="images/MAIN COURSE.avif" alt="Image 1">
+            </a>
+        </div>
+        <div class="gallery-img">
+            <a href="images/PIZZA & PASATA.avif" data-lightbox="models">
+                <img src="images/PIZZA & PASATA.avif" alt="Image 1">
+            </a>
+        </div>
+    </div>
+    <div class="gallery-row">
+        <div class="gallery-img">
+            <a href="images/SALAD & RAITA.avif" data-lightbox="models">
+                <img src="images/SALAD & RAITA.avif" alt="Image 1">
+            </a>
+        </div>
+        <div class="gallery-img">
+            <a href="images/SNACKS & DRINKS.jpg" data-lightbox="models">
+                <img src="images/SNACKS & DRINKS.jpg" alt="Image 1">
+            </a>
+        </div>
+        <div class="gallery-img">
+            <a href="images/TANDOOR STARTERS.jpg" data-lightbox="models">
+                <img src="images/TANDOOR STARTERS.jpg" alt="Image 1">
+            </a>
+        </div>
+        <div class="gallery-img">
+            <a href="images/INDIAN BREAD.jpg" data-lightbox="models">
+                <img src="images/INDIAN BREAD.jpg" alt="Image 1">
+            </a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="row">
+        <div class="col">
+            <h3>Hotel <div class="underline"><span></span></div></h3>
+                <a href="https://www.google.com/maps/dir/18.4894366,73.8264562/18.4629202,73.8166237/@18.4765112,73.8132895,15z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu" target="_blank" style="color: white; text-decoration: none;"> <p>Terrace Level, Abhiruchi Mall, S.No.59/1C, Bhide Baug, Sinhagad Road-Vadgaon Budruk,
+                    Pune, India, Maharashtra</p></a>
+            
+           
+        </div>
+        <div class="col">
+            <h3>Contact Us <div class="underline"><span></span></div></h3>
+            
+            <div class="contact-info">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+918048890509" class="phone-number-top" style="color: white;">+918048890509</a>
+            </div>
+                
+            <br>           
+
+            <div class="contact-info">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:villageabhiruchi@gmail.com" style="color: white; text-decoration: none;">villageabhiruchi@gmail.com</a>
+            </div>
+            
+        </div>
+        <div class="col">
+            <h3>Opening Hours <div class="underline"><span></span></div></h3>
+            <p>12:01  - 15:30 </p>
+            <p>19:00  - 22:30 </p>
+            <p>Happily Serving You Everyday !!!</p>
+            
+           
+            <br>
+           
+        </div>
+    </div>
+    <hr>
+    <p class="copyright">&copy; 2024 Abhiruchi Gokul. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,4185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://kit.fontawesome.com/83e3f05aac.js"></script>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="media_query.css">
+    <script src="script.js" async></script>
+    <title>Menu Card</title>
+</head>
+<body>
+  
+    <div class="navbar">
+
+       
+    
+        <div class="options-icon" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <div class="logo">
+            <img src="images/Abhiruchi Gokul English logo.png" alt="Logo">
+        </div>
+        
+        <div class="social-icons">
+            <!-- <i class="fa-solid fa-phone"></i> -->
+            <!-- <a href="tel:+918048890509" class="phone-number-top">+918048890509</a> -->
+            <a href="https://www.facebook.com/abhiruchigokulrestaurant/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/abhiruchi_gokul_restaurant/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+           <a href="https://wa.me/9922190221" target="_blank"><i class="fa-brands fa-whatsapp"></i></a> 
+           
+        </div>
+
+        
+    </div>
+    
+    <div class="content-container" >
+        
+        
+        <div class="image-section" id="row1">
+            <div class="image-card" onclick="showMenu('Menu0',0 )">
+                <img src="images/APPETIZERS.jpg" >
+                <h3>APPETIZERS</h3>
+            </div>
+
+            <div class="image-card" onclick="showMenu('Menu1',1 )">
+                <img src="images/SNACKS & DRINKS.jpg">
+                <h3>SNACKS & DRINKS</h3>
+            </div>
+
+            <div class="image-card" onclick="showMenu('Menu2',2 )">
+                <img src="images/SOUP.jpg" >
+                <h3>SOUP</h3>
+            </div>
+
+            <div class="image-card" onclick="showMenu('Menu3',3)">
+                <img src="images/STARTER.jpg" >
+                <h3>STARTER</h3>
+            </div>
+
+            <div class="image-card" onclick="showMenu('Menu4',4)">
+                <img src="images/TANDOOR STARTERS.jpg">
+                <h3>TANDOOR STARTERS</h3>
+            </div>
+            <div class="image-card" onclick="showMenu('Menu5',5)">
+                <img src="images/MAIN COURSE.avif">
+                <h3> MAIN COURSE</h3>
+            </div>
+
+            <div class="image-card" onclick="showMenu('Menu6',6)">
+                <img src="images/INDIAN BREAD.jpg">
+                <h3>INDIAN BREAD</h3>
+            </div>
+        </div>
+        <div class="image-section" id="row2">
+            <div class="image-card" onclick="showMenu('Menu7',7)">
+                <img src="images/SALAD & RAITA.avif">
+                <h3>SALAD & RAITA</h3>
+            </div>
+
+            <div class="image-card" onclick="showMenu('Menu8',8)">
+                <img src="images/RICE & BIRYANI.avif">
+                <h3>RICE & BIRYANI</h3>
+            </div>
+
+            <div class="image-card" onclick="showMenu('Menu9',9)">
+                <img src="images/CHINESE RICE & NOODLE.avif">
+                <h3>CHINESE RICE & NOODLE</h3>
+            </div>
+
+            <div class="image-card" onclick="showMenu('Menu10',10)">
+                <img src="images/PIZZA & PASATA.avif" >
+                <h3>PIZZA & PASATA</h3>
+            </div>
+
+            <div class="image-card" onclick="showMenu('Menu11',11)">
+                <img src="images/DESSERT.avif" >
+                <h3>DESSERT</h3>
+            </div>
+            <div class="image-card" onclick="showMenu('Menu12',12)">
+                <img src="images/MILKSHAKE, MASTANI & MOCKTAIL.jpg">
+                <h3>MILKSHAKE, MASTANI & MOCKTAIL</h3>
+            </div>
+           
+        </div>
+    </div>
+    <hr style="margin-top: 100px; color: yellow;" >
+    
+
+
+<div class="overlay" onclick="closeMenu()"></div>
+
+
+
+
+
+    
+
+<div class="options">
+    <div class="close-icon" onclick="closeMenu()">X</div>
+   
+    <a href="/">Home</a>
+    <a href="/menu">Digital Menu</a>
+    <ul class="sub-menu">
+        <li><a href="#" onclick="openMenuItem('Menu0',0)">APPETIZERS</a></li>
+        <li><a href="#" onclick="openMenuItem('Menu1',1)">SNACKS & DRINKS</a></li>
+        <li><a href="#" onclick="openMenuItem('Menu2',2)">SOUP</a></li>
+        <li><a href="#" onclick="openMenuItem('Menu3',3)">STARTER</a></li>
+        <li><a href="#" onclick="openMenuItem('Menu4',4)">TANDOOR STARTERS</a></li>
+        <li><a href="#" onclick="openMenuItem('Menu5',5)">MAIN COURSE</a></li>
+        <li><a href="#" onclick="openMenuItem('Menu6',6)">INDIAN BREAD</a></li>
+        <li><a href="#" onclick="openMenuItem('Menu7',7)">SALAD & RAITA</a></li>
+        <li><a href="#" onclick="openMenuItem('Menu8',8)">RICE & BIRYANI</a></li>
+        <li><a href="#" onclick="openMenuItem('Menu9',9)">CHINESE RICE & NOODLE</a></li>
+        <li><a href="#" onclick="openMenuItem('Menu10',10)">PIZZA & PASATA</a></li>
+        <li><a href="#" onclick="openMenuItem('Menu11',11)">DESSERT</a></li>
+        <li><a href="#" onclick="openMenuItem('Menu12',12)">MILKSHAKE, MASTANI & MOCKTAIL</a></li>
+        
+    </ul>
+    
+</div>
+
+
+    
+       
+<!------------------------------------------------- APPETIZERS ------------------------------------------>
+
+<div class="menu" id="Menu0">
+    <h1 ><span>APPETIZERS</span></h1>
+
+    <div class="menu_box">
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/APPETIZERS/MINERAL WATER.jpg">
+            </div>
+            <div class="menu_info">
+                <h2>MINERAL WATER</h2>
+                <h3>RS.30:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+        
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/APPETIZERS/COLD DRINKS.jpg">
+            </div>
+            <div class="menu_info">
+                <h2>COLD DRINKS</h2>
+                <p>(SPRITE, THUMS UP, MIRINDA)</p>
+                <h3>RS.30:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/APPETIZERS/FRESH JUICE.jpg">
+            </div>
+            <div class="menu_info">
+                <h2>FRESH JUICE </h2>
+                <p>(ORANGE,MOSAMBI,PINEAPPLE, WATER MELON )</p>
+                <h3>RS.120:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/APPETIZERS/FRESH LIME WATER.jpg">
+            </div>
+            <div class="menu_info">
+                <h2>FRESH LIME WATER</h2>
+                <h3>RS.40:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/APPETIZERS/FRESH LIME SODA.jpg">
+            </div>
+            <div class="menu_info">
+                <h2>FRESH LIME SODA</h2>
+                <h3>RS.60:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/APPETIZERS/JALJEERA WATER.jpg">
+            </div>
+            <div class="menu_info">
+                <h2>JALJEERA WATER</h2>
+                <h3>RS.50:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/APPETIZERS/JALJEERA WITH SODA.jpg">
+            </div>
+            <div class="menu_info">
+                <h2>JALJEERA WITH SODA</h2>
+                <h3>RS.60:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/APPETIZERS/BUTTER MILK.jpg">
+            </div>
+            <div class="menu_info">
+                <h2>BUTTER MILK</h2>
+                <h3>RS.60:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/APPETIZERS/LASSI.jpg">
+            </div>
+            <div class="menu_info">
+                <h2>LASSI</h2>
+                <h3>RS.70:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/APPETIZERS/KOKAM SARBAT.jpg">
+            </div>
+            <div class="menu_info">
+                <h2>KOKAM SARBAT</h2>
+                <h3>RS.40:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+
+        </div> 
+        
+    </div>
+
+<!-------------------------------------------------SNACKS & DRINKS ------------------------------------------>
+<div class="menu" id="Menu1">
+    <h1><span>SNACKS & DRINKS</span></h1>
+
+    <div class="menu_box">
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SNACKS & DRINKS/TEA.jpg">
+            </div>
+            <div class="menu_info">
+                <h2>TEA </h2>
+                <h3>RS.30:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+        
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SNACKS & DRINKS/NESCAFE.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>NESCAFE</h2>
+                <h3>RS.40:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SNACKS & DRINKS/HOT CHOCOLATE.jpg">
+            </div>
+            <div class="menu_info">
+                <h2>HOT CHOCOLATE </h2>   
+                <h3>RS.130:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SNACKS & DRINKS/COLD COFFEE.jpg">
+            </div>
+            <div class="menu_info">
+                <h2>COLD COFFEE</h2>
+                <h3>RS.90:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SNACKS & DRINKS/COLD COFFEE WITH ICE CREAM.jpg">
+            </div>
+            <div class="menu_info">
+                <h2>COLD COFFEE WITH ICE CREAM </h2>
+                <h3>RS.120:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+    
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SNACKS & DRINKS/VEG SANDWICH.jpg">
+            </div>
+            <div class="menu_info">
+                <h2>VEG SANDWICH </h2>
+                <h3>RS.100:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SNACKS & DRINKS/CHEESE SANDWICH.jpg">
+            </div>
+            <div class="menu_info">
+                <h2>CHEESE SANDWICH</h2>
+                <h3>RS.110:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SNACKS & DRINKS/VEG CHEESE SANDWICH.jpg">
+            </div>
+            <div class="menu_info">
+                <h2>VEG CHEESE SANDWICH</h2>
+                <h3>RS.120:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SNACKS & DRINKS/VEG CHEESE GRILLED SANDWICH.jpg">
+            </div>
+            <div class="menu_info">
+                <h2>VEG CHEESE GRILLED SANDWICH</h2>
+                <h3>RS.130:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SNACKS & DRINKS/EGG OMLET SANDWICH.jpg">
+            </div>
+            <div class="menu_info">
+                <h2>EGG OMLET SANDWICH</h2>
+                <h3>RS.130:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SNACKS & DRINKS/CHEESE CHILLY GARLIC TOAST.jpg">
+            </div>
+            <div class="menu_info">
+                <h2>CHEESE CHILLY GARLIC TOAST</h2>
+                <h3>RS.130:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SNACKS & DRINKS/CHICKEN SANDWICH.jpg">
+            </div>
+            <div class="menu_info">
+                <h2>CHICKEN SANDWICH</h2>
+                <h3>RS.150:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SNACKS & DRINKS/FINGER CHIPS.jpg">
+            </div>
+            <div class="menu_info">
+                <h2>FINGER CHIPS</h2>
+                <h3>RS.25:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SNACKS & DRINKS/MAKAI TIKKI.jpg">
+            </div>
+            <div class="menu_info">
+                <h2>MAKAI TIKKI</h2>
+                <h3>RS.200:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SNACKS & DRINKS/ALU PUDINA TIKKI.jpg">
+            </div>
+            <div class="menu_info">
+                <h2>ALU PUDINA TIKKI</h2>
+                <h3>RS.200:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SNACKS & DRINKS/VEG HARABHARA KABAB.jpg">
+            </div>
+            <div class="menu_info">
+                <h2>VEG HARABHARA KABAB</h2>
+                <h3>RS.200:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SNACKS & DRINKS/ALU PAKODA.jpg">
+            </div>
+            <div class="menu_info">
+                <h2>ALU PAKODA</h2>
+                <h3>RS.100:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SNACKS & DRINKS/ONION PAKODA.jpg">
+            </div>
+            <div class="menu_info">
+                <h2>ONION PAKODA</h2>
+                <h3>RS.100:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SNACKS & DRINKS/MIX PAKODA.jpg">
+            </div>
+            <div class="menu_info">
+                <h2>MIX PAKODA</h2>
+                <h3>RS.120:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SNACKS & DRINKS/PANEER PAKODA.jpg">
+            </div>
+            <div class="menu_info">
+                <h2>PANEER PAKODA</h2>
+                <h3>RS.140:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SNACKS & DRINKS/CHEESE PAKODA.jpg">
+            </div>
+            <div class="menu_info">
+                <h2>CHEESE PAKODA</h2>
+                <h3>RS.150:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SNACKS & DRINKS/CHEESE CHERRY PINEAPPLE.jpg">
+            </div>
+            <div class="menu_info">
+                <h2>CHEESE CHERRY PINEAPPLE </h2>
+                <h3>RS.180:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SNACKS & DRINKS/ROASTED PAPAD.jpg">
+            </div>
+            <div class="menu_info">
+                <h2>ROASTED PAPAD</h2>
+                <h3>RS.25:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SNACKS & DRINKS/FRIED PAPAD.jpg">
+            </div>
+            <div class="menu_info">
+                <h2>FRIED PAPAD </h2>
+                <h3>RS.30:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SNACKS & DRINKS/MASALA PAPAD.jpg">
+            </div>
+            <div class="menu_info">
+                <h2>MASALA PAPAD</h2>
+                <h3>RS.50:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SNACKS & DRINKS/ROASTED MASALA PAPAD.jpg">
+            </div>
+            <div class="menu_info">
+                <h2>ROASTED MASALA PAPAD </h2>
+                <h3>RS.50:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        
+       
+
+        </div> 
+        
+    </div>
+
+
+<!------------------------------------------------- SOUP ------------------------------------------>
+
+<div class="menu" id="Menu2">
+    <h1><span>SOUP</span></h1>
+
+    <h2 class="veg">VEGETARIAN</h2>
+
+    <div class="menu_box">
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SOUP/CREAM OF TOMATO SOUP.jpg">
+            </div>
+
+            <div class="menu_info">
+                
+                <h2>CREAM OF TOMATO SOUP</h2>
+               
+                <h3>RS.150:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+        
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SOUP/CREAM OF PALAK SOUP.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>CREAM OF PALAK SOUP </h2>
+                
+                <h3>RS.150:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SOUP/VEG CLEAR SOUP.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>VEG CLEAR SOUP</h2>
+                
+                <h3>RS.150:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SOUP/SWEET CORN VEG SOUP.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>SWEET CORN VEG SOUP</h2>
+               
+                <h3>RS.150:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SOUP/VEG HOT & SOUR SOUP.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>VEG HOT & SOUR SOUP</h2>
+               
+                <h3>RS.150:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SOUP/VEG MANCHOW SOUP.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>VEG MANCHOW SOUP</h2>
+               
+                <h3>RS.150:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+        
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SOUP/LEMON CORIANDER SOUP.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>LEMON CORIANDER SOUPs</h2>
+               
+                <h3>RS.160:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+        
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SOUP/CREAM OF MUSHROOM SOUP.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>CREAM OF MUSHROOM SOUP</h2>
+               
+                <h3>RS.170:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+        
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SOUP/ASIAN NOODLE SOUP.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>ASIAN NOODLE SOUP</h2>
+               
+                <h3>RS.180:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+        
+        
+        </div> 
+        
+    <h2 class="nonveg">NON VEGETARIAN</h2>
+
+    <div class="menu_box">
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SOUP/CHICKEN CLEAR SOUP.jpg">
+            </div>
+
+            <div class="menu_info">
+                
+                <h2>CHICKEN CLEAR SOUP</h2>
+               
+                <h3>RS.150:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+        
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SOUP/CHICKEN HOT & SOUR SOUP.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>CHICKEN HOT & SOUR SOUP </h2>
+                
+                <h3>RS.160:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SOUP/CHICKEN SWEET CORN SOUP.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>CHICKEN SWEET CORN SOUP</h2>
+                
+                <h3>RS.160:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SOUP/CHICKEN CREAM OF SOUP.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>CHICKEN CREAM OF SOUP</h2>
+               
+                <h3>RS.160:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SOUP/CHICKEN MANCHOW SOUP.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>CHICKEN MANCHOW SOUP</h2>
+               
+                <h3>RS.160:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+
+        
+        
+        </div> 
+
+        
+    </div>
+
+
+<!------------------------------------------------- STARTER ------------------------------------------>
+<div class="menu" id="Menu3">
+    <h1><span>STARTER</span></h1>
+
+    <h2 class="veg">VEGETARIAN CHINESE</h2>
+
+    <div class="menu_box">
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/STARTER/CHINESS BHEL.jpg">
+            </div>
+
+            <div class="menu_info">
+                
+                <h2>CHINESS BHEL</h2>
+               
+                <h3>RS.170:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+        
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/STARTER/VEG CRISPY.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>VEG CRISPY</h2>
+                
+                <h3>RS.210:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/STARTER/VEG MANCHURIAN DRY.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>VEG MANCHURIAN DRY </h2>
+                
+                <h3>RS.220:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/STARTER/MUSHROOM CHILLY DRY.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>MUSHROOM CHILLY DRY </h2>
+               
+                <h3>RS.250:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/STARTER/BABYCORN CHILLY DRY.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>BABYCORN CHILLY DRY</h2>
+               
+                <h3>RS.220:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/STARTER/HONEY CHILLY POTATO.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>HONEY CHILLY POTATO</h2>
+               
+                <h3>RS.240:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/STARTER/VEG HOT PAN.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>VEG HOT PAN</h2>
+               
+                <h3>RS.250:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/STARTER/PANEER SATAY.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>PANEER SATAY</h2>
+               
+                <h3>RS.270:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/STARTER/PANEER BUTTER GARLIC.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>PANEER BUTTER GARLIC</h2>
+               
+                <h3>RS.270:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/STARTER/PANEER CHILLY DRY.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>PANEER CHILLY DRY</h2>
+               
+                <h3>RS.240:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/STARTER/PANEER HOTPAN.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>PANEER HOTPAN</h2>
+               
+                <h3>RS.250:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/STARTER/PANEER CRISPY.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>PANEER CRISPY</h2>
+               
+                <h3>RS.260:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>       
+        </div> 
+
+
+
+    <h2 class="nonveg">NON VEGETARIAN</h2>
+
+    <div class="menu_box">
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/STARTER/CHICKEN LOLLYPOP.jpg">
+            </div>
+
+            <div class="menu_info">
+                
+                <h2>CHICKEN LOLLYPOP</h2>
+               
+                <h3>RS.220:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+        
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/STARTER/CHICKEN HOTPAN.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>CHICKEN HOTPAN</h2>
+                
+                <h3>RS.320:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/STARTER/CHICKEN SATAY.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>CHICKEN SATAY</h2>
+                
+                <h3>RS.320:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/STARTER/CHICKEN MANCHURIAN DRY.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>CHICKEN MANCHURIAN DRY</h2>
+               
+                <h3>RS.300:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/STARTER/CHICKEN CHILLY DRY.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>CHICKEN CHILLY DRY </h2>
+               
+                <h3>RS.300:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/STARTER/CHICKEN CRISPY.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>CHICKEN CRISPY</h2>
+               
+                <h3>RS.320:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/STARTER/KUNG PAO CHICKEN.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>KUNG PAO CHICKEN</h2>
+               
+                <h3>RS.340:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/STARTER/CHICKEN SALT & PEPPER.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>CHICKEN SALT & PEPPER</h2>
+               
+                <h3>RS.350:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/STARTER/CRISPY HONEY CHICKEN.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>CRISPY HONEY CHICKEN </h2>
+               
+                <h3>RS.350:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+
+        
+        
+        </div> 
+
+
+        
+    </div>
+
+
+
+<!------------------------------------------------- TANDOOR STARTERS ------------------------------------------------->
+<div class="menu" id="Menu4">
+    <h1><span>TANDOOR STARTERS</span></h1>
+
+    <h2 class="veg">VEGETARIAN</h2>
+
+    <div class="menu_box">
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/TANDOOR STARTERS/VEG SEEKH KABAB.jpg">
+            </div>
+
+            <div class="menu_info">
+                
+                <h2>VEG SEEKH KABAB</h2>
+               
+                <h3>RS.200:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+        
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/TANDOOR STARTERS/VEG CHEESE SEEKH KABAB.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>VEG CHEESE SEEKH KABAB</h2>
+                
+                <h3>RS.260:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/TANDOOR STARTERS/TANDOOR ALOOGOBI.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>TANDOOR ALOO/GOBI</h2>
+                
+                <h3>RS.210:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/TANDOOR STARTERS/TANDOOR SPECIAL ALOO.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>TANDOOR SPECIAL ALOO </h2>
+               
+                <h3>RS.250:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/TANDOOR STARTERS/PANEER TIKKA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>PANEER TIKKA</h2>
+                <p> (MALAI,PAHADI,LASONI, BANJARA,PUDINA,ANGARA ) </p>
+               
+                <h3>RS.300:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/TANDOOR STARTERS/PANEER CHEES TIKKA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>PANEER CHEES TIKKA</h2>
+               
+                <h3>RS.320:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/TANDOOR STARTERS/PANEER NAWABI TIKKA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>PANEER NAWABI TIKKA</h2>
+               
+                <h3>RS.300:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/TANDOOR STARTERS/MUSHROOM MULTANI TIKKA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>MUSHROOM MULTANI TIKKA</h2>
+               
+                <h3>RS.280:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/TANDOOR STARTERS/STUFFED TANDOOR MUSHROOM.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>STUFFED TANDOOR MUSHROOM</h2>
+               
+                <h3>RS.280:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/TANDOOR STARTERS/TANDOOR MUSHROOMBABYCORN.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>TANDOOR MUSHROOM/ BABYCORN</h2>
+               
+                <h3>RS.260:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/TANDOOR STARTERS/VEG PLATTER.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>VEG PLATTER</h2>
+               
+                <h3>RS.850:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+
+        </div> 
+
+        
+
+    <h2 class="nonveg">NON VEGETARIAN</h2>
+
+    <div class="menu_box">
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/TANDOOR STARTERS/TANDOOR CHICKEN HALFFULL.jpg">
+            </div>
+
+            <div class="menu_info">
+                
+                <h2>TANDOOR CHICKEN HALF/FULL</h2>
+               
+                <h3>RS.280/500:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+        
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/TANDOOR STARTERS/TANDOOR LOLLYPOP.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>TANDOOR LOLLYPOP</h2>
+                
+                <h3>RS.240:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/TANDOOR STARTERS/CHICKEN TIKKA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>CHICKEN TIKKA</h2>
+                
+                <h3>RS.280:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/TANDOOR STARTERS/CHICKEN KABAB.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>CHICKEN KABAB</h2>
+                <p>(LASOONI,PAHADI,BANJARA,SHOLE ,KALIMIRI,PUDINA,ANGARA,ACHARI)</p>
+               
+                <h3>RS.320:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/TANDOOR STARTERS/CHICKEN RESHMI KABAB.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>CHICKEN RESHMI KABAB</h2>
+                
+               
+                <h3>RS.320:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/TANDOOR STARTERS/CHICKEN MALAI TIKKA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>CHICKEN MALAI TIKKA</h2>
+               
+                <h3>RS.320:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/TANDOOR STARTERS/CHICKEN SEEKH KABAB.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>CHICKEN SEEKH KABAB</h2>
+               
+                <h3>RS.320:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/TANDOOR STARTERS/NON VEG PLATTER.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>NON VEG PLATTER</h2>
+               
+                <h3>RS.1250:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        
+        </div> 
+
+        
+    </div>
+
+
+<!------------------------------------------------- MAIN COURSE ------------------------------------------>
+
+<div class="menu" id="Menu5">
+    <h1><span>MAIN COURSE</span></h1>
+
+    <h2 class="veg">VEGETARIAN</h2>
+
+    <div class="menu_box">
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/ABHIRUCHI GOKUL SPECIAL VEG.jpg">
+            </div>
+
+            <div class="menu_info">
+                
+                <h2>ABHIRUCHI GOKUL SPECIAL VEG</h2>
+               
+                <h3>RS.360:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+        
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/VEG CHAMCHAM.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>VEG CHAMCHAM</h2>
+                
+                <h3>RS.300:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/VEG ANGARA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>VEG ANGARA</h2>
+                
+                <h3>RS.300:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/VEG PATIYALA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>VEG PATIYALA</h2>
+               
+                <h3>RS.300:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/VEG TOOFANI.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>VEG TOOFANI</h2>
+               
+                <h3>RS.300:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/VEG BOONA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>VEG BOONA </h2>
+               
+                <h3>RS.280:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/VEG HYDRABADI.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>VEG HYDRABADI</h2>
+               
+                <h3>RS.260:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/VEG MARATHA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>VEG MARATHA</h2>
+               
+                <h3>RS.260:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/VEG KADAI.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>VEG KADAI </h2>
+               
+                <h3>RS.250:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/VEG JALFREZI.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>VEG JALFREZI</h2>
+               
+                <h3>RS.250:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/VEG TAWA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>VEG TAWA</h2>
+               
+                <h3>RS.270:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/VEG KOLHAPURI.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>VEG KOLHAPURI</h2>
+               
+                <h3>RS.280:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/MIX VEG.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>MIX VEG</h2>
+               
+                <h3>RS.240:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/PANEER TIKKA MASALA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>PANEER TIKKA MASALA</h2>
+               
+                <h3>RS.240:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/MUTTER PANEER.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>MUTTER PANEER</h2>
+               
+                <h3>RS.260:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/PANEER BUTTER MASALA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>PANEER BUTTER MASALA</h2>
+               
+                <h3>RS.260:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/PANEER PALAK.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>PANEER PALAK</h2>
+               
+                <h3>RS.270:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/PANEER KADAI.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>PANEER KADAI</h2>
+               
+                <h3>RS.270:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/PANEER LABABDAR.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>PANEER LABABDAR</h2>
+               
+                <h3>RS.280:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/PANEER BIRBALI.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>PANEER BIRBALI </h2>
+               
+                <h3>RS.290:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/PANEER KOLIWADA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>PANEER KOLIWADA</h2>
+               
+                <h3>RS.290:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/PANEER KAJU MASALA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>PANEER KAJU MASALA</h2>
+               
+                <h3>RS.300:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/PANEER MUSHROOM MASALA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>PANEER MUSHROOM MASALA</h2>
+               
+                <h3>RS.300:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/PANEER RAJWADA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>PANEER RAJWADA</h2>
+               
+                <h3>RS.310:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/PANEER PASANDA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>PANEER PASANDA</h2>
+               
+                <h3>RS.320:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/PANEER BANJARA MASALA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>PANEER BANJARA MASALA</h2>
+               
+                <h3>RS.290:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/PANEER PAHADI MASALA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>PANEER PAHADI MASALA </h2>
+               
+                <h3>RS.300:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/PANEER HANDI.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>PANEER HANDI</h2>
+               
+                <h3>RS.300:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/PANEER BHURJI.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>PANEER BHURJI</h2>
+               
+                <h3>RS.260:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/KAJU MASALA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>KAJU MASALA </h2>
+               
+                <h3>RS.320:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/KAJU CURRY.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>KAJU CURRY</h2>
+               
+                <h3>RS.340:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/KAJU PANEER MASALA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>KAJU PANEER MASALA</h2>
+               
+                <h3>RS.300:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/MALAI KOFTA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>MALAI KOFTA</h2>
+               
+                <h3>RS.280:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/MUSHROOM MASALA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>MUSHROOM MASALA </h2>
+               
+                <h3>RS.300:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/MUSHROOM NOORANI MASALA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>MUSHROOM NOORANI MASALA</h2>
+               
+                <h3>RS.300:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/BABY CORN MUSHROOM MASALA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>BABY CORN MUSHROOM MASALA </h2>
+               
+                <h3>RS.300:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/ALOO JEERA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>ALOO JEERA</h2>
+               
+                <h3>RS.190:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/ALOO MUTTER.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>ALOO MUTTER</h2>
+               
+                <h3>RS.230:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/ALOO METHI.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>ALOO METHI </h2>
+               
+                <h3>RS.240:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/DUM ALOO PUNJABI.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>DUM ALOO PUNJABI</h2>
+               
+                <h3>RS.260:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/DUM ALOO KASHMIRI.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>DUM ALOO KASHMIRI</h2>
+               
+                <h3>RS.280:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/LASOONI METHI.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>LASOONI METHI</h2>
+               
+                <h3>RS.200:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/BENGAN MASALA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>BENGAN MASALA </h2>
+               
+                <h3>RS.200:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/BHENDI MASALAFRY.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>BHENDI MASALA/FRY</h2>
+               
+                <h3>RS.200:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/DAL FRY.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>DAL FRY</h2>
+               
+                <h3>RS.180:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/DAL TADKA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>DAL TADKA</h2>
+               
+                <h3>RS.190:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/DAL PALAK.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>DAL PALAK</h2>
+               
+                <h3>RS.200:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MAIN COURSE/DAL KOLHAPURI.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>DAL KOLHAPURI </h2>
+               
+                <h3>RS.200:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        
+        </div> 
+
+
+
+        <h2 class="nonveg">NON VEGETARIAN </h2>
+        <h3 class="nonveg">CHICKEN </h3>
+
+        <div class="menu_box">
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/CHICKEN MASALA.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    
+                    <h2>CHICKEN MASALA</h2>
+                   
+                    <h3>RS.280:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div> 
+            
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/CHICKEN SUKHA FRY.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>CHICKEN SUKHA /FRY</h2>
+                    
+                    <h3>RS.300:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div> 
+    
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/CHICKEN KADAI.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>CHICKEN KADAI</h2>
+                    
+                    <h3>RS.280:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div> 
+    
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/CHICKEN TAWA.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>CHICKEN TAWA</h2>
+                   
+                    <h3>RS.280:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/CHICKEN BHUNA.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>CHICKEN BHUNA</h2>
+                   
+                    <h3>RS.300:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/CHICKEN SAGWALA.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>CHICKEN SAGWALA  </h2>
+                   
+                    <h3>RS.300:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/CHICKEN KOLHAPURI.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>CHICKEN KOLHAPURI</h2>
+                   
+                    <h3>RS.280:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/CHICKEN DO PYAZA.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>CHICKEN DO PYAZA</h2>
+                   
+                    <h3>RS.280:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/CHICKEN RARA.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>CHICKEN RARA</h2>
+                   
+                    <h3>RS.330:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/CHICKEN PATIYALA.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>CHICKEN PATIYALA</h2>
+                   
+                    <h3>RS.350:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/CHICKEN ANGARA MASALA.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>CHICKEN ANGARA MASALA</h2>
+                   
+                    <h3>RS.350:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/CHICKEN TIKKA MASALA.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>CHICKEN TIKKA MASALA</h2>
+                   
+                    <h3>RS.320:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/CHICKEN BANJARA MASALA.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>CHICKEN BANJARA MASALA</h2>
+                   
+                    <h3>RS.340:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/CHICKEN PAHADI MASALA.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>CHICKEN PAHADI MASALA</h2>
+                   
+                    <h3>RS.340:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/CHICKEN LASOONI ADRAKI MASALA.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>CHICKEN LASOONI / ADRAKI MASALA</h2>
+                   
+                    <h3>RS.320:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/CHICKEN KHEEMA MASALA.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>CHICKEN KHEEMA MASALA</h2>
+                   
+                    <h3>RS.340:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/BUTTER CHICKEN (HALF FULL ).jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>BUTTER CHICKEN (HALF/ FULL )</h2>
+                   
+                    <h3>RS.380/620:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/MURG MUSSALLAM (HALFFULL ).jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>MURG MUSSALLAM (HALF/FULL )</h2>
+                   
+                    <h3>RS.400/780:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/CHICKEN HANDI (HALFFULL ).jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>CHICKEN HANDI (HALF/FULL )</h2>
+                   
+                    <h3>RS.330/600:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/CHICKEN MALWANI HANDI (HALF FULL ).jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>CHICKEN MALWANI HANDI (HALF/ FULL ) </h2>
+                   
+                    <h3>RS.340/600:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/CHICKEN MARATHA HANDI (HALFFULL).jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>CHICKEN MARATHA HANDI (HALF/FULL) </h2>
+                   
+                    <h3>RS.330/640:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/CHICKEN KABULI HANDI (HALFFULL ).jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>CHICKEN KABULI HANDI (HALF/FULL )</h2>
+                   
+                    <h3>RS.380/640:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/CHICKEN KHAIBER HANDI (HALFFULL).jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>CHICKEN KHAIBER HANDI (HALF/FULL) </h2>
+                   
+                    <h3>RS.380/740:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+        </div>    
+        
+
+        <h3 class="nonveg">MUTTON </h3>
+
+        <div class="menu_box">
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/MUTTON MASALA.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    
+                    <h2>MUTTON MASALA</h2>
+                   
+                    <h3>RS.360:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div> 
+            
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/MUTTON SUKHA.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>MUTTON SUKHA</h2>
+                    
+                    <h3>RS.370:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div> 
+    
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/MUTTON SAGWALA.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>MUTTON SAGWALA</h2>
+                    
+                    <h3>RS.390:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div> 
+    
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/MUTTON ADRAKI.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>MUTTON ADRAKI</h2>
+                   
+                    <h3>RS.380:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/MUTTON KOLHAPURI.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>MUTTON KOLHAPURI</h2>
+                   
+                    <h3>RS.360:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/MUTTON ROGAN JOSH.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>MUTTON ROGAN JOSH  </h2>
+                   
+                    <h3>RS.400:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/MUTTON BHOONA.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>MUTTON BHOONA</h2>
+                   
+                    <h3>RS.380:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/MUTTON MUGHLAI.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>MUTTON MUGHLAI </h2>
+                   
+                    <h3>RS.400:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/MUTTON KALIMIRI.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>MUTTON KALIMIRI </h2>
+                   
+                    <h3>RS.390:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/MUTTON RARA.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>MUTTON RARA</h2>
+                   
+                    <h3>RS.400:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/MUTTON KHEEMA.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>MUTTON KHEEMA</h2>
+                   
+                    <h3>RS.410:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/MUTTON DO PYAZA.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>MUTTON DO PYAZA</h2>
+                   
+                    <h3>RS.420:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/MUTTON KADAI.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>MUTTON KADAI</h2>
+                   
+                    <h3>RS.360:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/MUTTON HANDI (HALFFULL ).jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>MUTTON HANDI (HALF/FULL )</h2>
+                   
+                    <h3>RS.380/700:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/MUTTON MALWANI HANDI (HALFFULL ).jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>MUTTON MALWANI HANDI (HALF/FULL )</h2>
+                   
+                    <h3>RS.420/740:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/MUTTON MARATHA HANDI (HALFFULL ).jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>MUTTON MARATHA HANDI (HALF/FULL ) </h2>
+                   
+                    <h3>RS.400/750:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+                     
+        </div>   
+        
+        <h3 class="nonveg">EGG </h3>
+
+        <div class="menu_box">
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/EGG MASALA.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    
+                    <h2>EGG MASALA</h2>
+                   
+                    <h3>RS.180:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/EGG CURRY.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    
+                    <h2>EGG CURRY</h2>
+                   
+                    <h3>RS.180:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/EGG BHURJEE.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    
+                    <h2>EGG BHURJEE</h2>
+                   
+                    <h3>RS.160:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/EGG HALF FRY.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    
+                    <h2>EGG HALF FRY</h2>
+                   
+                    <h3>RS.160:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/EGG OMLET.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    
+                    <h2>EGG OMLET</h2>
+                   
+                    <h3>RS.140:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/MAIN COURSE/EGG BOILED.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    
+                    <h2>EGG BOILED</h2>
+                   
+                    <h3>RS.100:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>
+        </div>    
+        
+    </div>
+
+
+<!-------------------------------------------------INDIAN BREAD  ------------------------------------------>
+
+<div class="menu" id="Menu6">
+    <h1><span>Chinese</span></h1>
+
+    <div class="menu_box">
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/INDIAN BREAD/TANDOORI ROTI.jpg">
+            </div>
+
+            <div class="menu_info">
+                
+                <h2>TANDOORI ROTI (PLAIN/ BUTTER )  </h2>
+               
+                <h3>RS.30 / 40:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+        
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/INDIAN BREAD/MISSI ROTI PLAIN BUTTER.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>MISSI ROTI (PLAIN / BUTTER)</h2>
+                
+                <h3>RS.40 / 50:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/INDIAN BREAD/NAAN.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>NAAN (PLAIN / BUTTER )</h2>
+                
+                <h3>RS.40 / 50:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/INDIAN BREAD/GARLIC NAAN.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>GARLIC NAAN (PLAIN /BUTTER ) </h2>
+               
+                <h3>RS.70 / 80:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/INDIAN BREAD/CHEES GARLIC NAAN.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>CHEES GARLIC NAAN </h2>
+               
+                <h3>RS.120:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/INDIAN BREAD/KASHMIRI NAAN.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>KASHMIRI NAAN </h2>
+               
+                <h3>RS.140:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/INDIAN BREAD/LACCHA PARATHA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>LACCHA PARATHA (PLAIN / BUTTER)</h2>
+               
+                <h3>RS.70 / 80:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/INDIAN BREAD/KULCHA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>KULCHA (PLAIN / BUTTER ) </h2>
+               
+                <h3>RS.50 / 60:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/INDIAN BREAD/STUFF PARATHA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>STUFF PARATHA </h2>
+                <p>(ALOO , GOBI, MIX VEG, METHI )</p>
+               
+                <h3>RS.100:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/INDIAN BREAD/PANEER PARATHA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>PANEER PARATHA </h2>
+               
+                <h3>RS.100:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/INDIAN BREAD/ROTI BASKET.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>ROTI BASKET </h2>
+               
+                <h3>RS.420:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/INDIAN BREAD/TAWA CHAPATI.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>TAWA CHAPATI (PLAIN /BUTTER) </h2>
+               
+                <h3>RS.25 / 30:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/INDIAN BREAD/BHAKARI.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>BHAKARI  </h2>
+               
+                <h3>RS.30:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+
+        </div> 
+        
+    </div>
+
+
+<!------------------------------------------------- SALAD & RAITA ------------------------------------------>
+
+<div class="menu" id="Menu7">
+    <h1><span>SALAD & RAITA</span></h1>
+
+    <div class="menu_box">
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SALAD & RAITA/GREEN SALAD.jpg">
+            </div>
+
+            <div class="menu_info">
+                
+                <h2>GREEN SALAD</h2>
+               
+                <h3>RS.120:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+        
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SALAD & RAITA/PASTA SALAD.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>PASTA SALAD</h2>
+                
+                <h3>RS.200:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SALAD & RAITA/MIX VEG RAITA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>MIX VEG RAITA</h2>
+                
+                <h3>RS.100:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SALAD & RAITA/BOONDI RAITA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>BOONDI RAITA</h2>
+               
+                <h3>RS.100:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SALAD & RAITA/PINEAPPLE RAITA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>PINEAPPLE RAITA</h2>
+               
+                <h3>RS.120:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/SALAD & RAITA/PLAIN CURD.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>PLAIN CURD</h2>
+               
+                <h3>RS.80:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        
+        </div> 
+        
+    </div>
+
+
+<!-----------------------------------------------RICE & BIRYANI ------------------------------------------>
+
+
+<div class="menu" id="Menu8">
+    <h1><span>RICE & BIRYANI</span></h1>
+
+    <div class="menu_box">
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/RICE AND BIRYANI/STEAM RICE.jpg">
+            </div>
+
+            <div class="menu_info">
+                
+                <h2>STEAM RICE (HALF/FULL ) </h2>
+               
+                <h3>RS.80/ 140:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+        
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/RICE AND BIRYANI/JEERA RICE.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>JEERA RICE (HALF /FULL )</h2>
+                
+                <h3>RS.90 / 160:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/RICE AND BIRYANI/CURD RICE.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>CURD RICE </h2>
+                
+                <h3>RS.180:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/RICE AND BIRYANI/GREEN PEAS PULAV.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>GREEN PEAS PULAV</h2>
+               
+                <h3>RS.190:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/RICE AND BIRYANI/VEG PULAV.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>VEG PULAV</h2>
+               
+                <h3>RS.190:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/RICE AND BIRYANI/KASHMIRI PULAV.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>KASHMIRI PULAV</h2>
+               
+                <h3>RS.220:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/RICE AND BIRYANI/DAL KHICHADI.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>DAL KHICHADI (PLAIN / GHEE)</h2>
+               
+                <h3>RS.200/ 220:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/RICE AND BIRYANI/VEG MATKA DUM BIRYANI.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>VEG MATKA DUM BIRYANI </h2>
+               
+                <h3>RS.250:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/RICE AND BIRYANI/VEG DUM HYDERABADI BIRYANI.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>VEG DUM HYDERABADI BIRYANI</h2>
+               
+                <h3>RS.260:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/RICE AND BIRYANI/CHICKEN MATKA DUM BIRYANI.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>CHICKEN MATKA DUM BIRYANI </h2>
+               
+                <h3>RS.320:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/RICE AND BIRYANI/CHICKEN DUM HYDERABADI BIRYANI.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>CHICKEN DUM HYDERABADI BIRYANI</h2>
+               
+                <h3>RS.330:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/RICE AND BIRYANI/CHICKEN TIKKA BIRYANI.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>CHICKEN TIKKA BIRYANI</h2>
+               
+                <h3>RS.360:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/RICE AND BIRYANI/MUTTON MATKA DUM BIRYANI.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>MUTTON MATKA DUM BIRYANI</h2>
+               
+                <h3>RS.430:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/RICE AND BIRYANI/MUTTON HYDERABADI DUM BIRYANI.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>MUTTON HYDERABADI DUM BIRYANI</h2>
+               
+                <h3>RS.400:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/RICE AND BIRYANI/EGG MATKA BIRYANI.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>EGG MATKA BIRYANI</h2>
+               
+                <h3>RS.240:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+
+        </div> 
+        
+    </div>
+
+
+<!----------------------------------------------- CHINESE RICE & NOODLE  ------------------------------------------>
+
+<div class="menu" id="Menu9">
+    <h1><span>CHINESE RICE & NOODLE </span></h1>
+    <h2 class="veg">VEGETARIAN</h2>
+
+    <div class="menu_box">
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/CHINESE RICE & NOODLE/VEG FRIED RICE.jpg">
+            </div>
+
+            <div class="menu_info">
+                
+                <h2>VEG FRIED RICE</h2>
+               
+                <h3>RS.220:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+        
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/CHINESE RICE & NOODLE/VEG SCHEZWAN RICE.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>VEG SCHEZWAN RICE</h2>
+                
+                <h3>RS.220:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/CHINESE RICE & NOODLE/VEG SINGAPURI RICE.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>VEG SINGAPURI RICE</h2>
+                
+                <h3>RS.240:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/CHINESE RICE & NOODLE/VEG HONGKONG RICE.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>VEG HONGKONG RICE</h2>
+               
+                <h3>RS.240:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/CHINESE RICE & NOODLE/MUSHROOM FRIED RICE.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>MUSHROOM FRIED RICE</h2>
+               
+                <h3>RS.240:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/CHINESE RICE & NOODLE/VEG HAKKA NOODLE.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>VEG HAKKA NOODLE </h2>
+               
+                <h3>RS.220:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/CHINESE RICE & NOODLE/VEG SCHEZWAN NOODLE.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>VEG SCHEZWAN NOODLE</h2>
+               
+                <h3>RS.538:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/CHINESE RICE & NOODLE/VEG SINGAPURI HONGKONG NOODLE.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>VEG SINGAPURI /HONGKONG NOODLE</h2>
+               
+                <h3>RS.240:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/CHINESE RICE & NOODLE/VEG TRIPPLE SCHEZWAN RICE  NOODLE.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>VEG TRIPPLE SCHEZWAN ( RICE / NOODLE)</h2>
+               
+                <h3>RS.280 / 300:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/CHINESE RICE & NOODLE/VEG CHINESE CHOPSUEY.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>VEG CHINESE CHOPSUEY</h2>
+               
+                <h3>RS.250:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        
+        </div> 
+
+        <h2 class="nonveg">NON VEGETARIAN</h2>
+
+        <div class="menu_box">
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/CHINESE RICE & NOODLE/EGG FRIED RICE.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    
+                    <h2>EGG FRIED RICE</h2>
+                   
+                    <h3>RS.200:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div> 
+            
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/CHINESE RICE & NOODLE/CHICKEN FRIED RICE.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>CHICKEN FRIED RICE</h2>
+                    
+                    <h3>RS.230:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div> 
+    
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/CHINESE RICE & NOODLE/CHICKEN SCHEZWAN RICE.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>CHICKEN SCHEZWAN RICE</h2>
+                    
+                    <h3>RS.250:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div> 
+    
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/CHINESE RICE & NOODLE/CHICKEN SINGAPURIHONGKONG RICE.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>CHICKEN SINGAPURI /HONGKONG RICE</h2>
+                   
+                    <h3>RS.260:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/CHINESE RICE & NOODLE/CHICKEN HAKKA NOODLE.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>CHICKEN HAKKA NOODLE</h2>
+                   
+                    <h3>RS.230:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/CHINESE RICE & NOODLE/CHICKEN SCHEZWAN NOODLE.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>CHICKEN SCHEZWAN NOODLE </h2>
+                   
+                    <h3>RS.250:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/CHINESE RICE & NOODLE/CHICKEN SINGAPURIHONGKONG NOODLE.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>CHICKEN SINGAPURI /HONGKONG NOODLE</h2>
+                   
+                    <h3>RS.260:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/CHINESE RICE & NOODLE/CHICKEN TRIPPLE SCHEZWAN RICE  NOODLE.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>CHICKEN TRIPPLE SCHEZWAN RICE / NOODLE</h2>
+                   
+                    <h3>RS.300 / 310:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div>          
+            
+            </div> 
+        
+    </div>
+
+
+<!----------------------------------------------- PIZZA & PASATA ------------------------------------------>
+
+<div class="menu" id="Menu10">
+    <h1><span>PIZZA & PASATA</span></h1>
+
+    <h2 class="pizza">PIZZA ( <span style="color: #00b812;">VEGETARIAN</span>&nbsp;OR&nbsp;<span style="color: #FF0000;">NON VEGETARIAN</span>)</h2>
+
+
+    <div class="menu_box">
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/PIZZA & PASATA/MARGHERITA PIZZA.jpg">
+            </div>
+
+            <div class="menu_info">
+                
+                <h2>MARGHERITA PIZZA</h2>
+               
+                <h3>RS.290:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+        
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/PIZZA & PASATA/VATICAN DELIGHT PIZZA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>VATICAN DELIGHT PIZZA</h2>
+                
+                <h3>RS.320 / 350:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/PIZZA & PASATA/CHICKEN PANEER TIKKA PIZZA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>CHICKEN / PANEER TIKKA PIZZA</h2>
+                
+                <h3>RS.320 / 340:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+
+        </div> 
+    
+            
+        <h2 class="pasta">PASTA ( <span style="color: #00b812;">VEGETARIAN</span>&nbsp;OR&nbsp;<span style="color: #FF0000;">NON VEGETARIAN</span>) (PENNE , MACARONI )</h2>
+        
+
+        <div class="menu_box">
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/PIZZA & PASATA/ALFREDO PASTA.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    
+                    <h2>ALFREDO PASTA</h2>
+                   
+                    <h3>RS.340 / 360:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div> 
+            
+            <div class="menu_card">
+    
+                <div class="menu_image">
+                    <img src="images/PIZZA & PASATA/ARRABBITA PASTA.jpg">
+                </div>
+    
+                <div class="menu_info">
+                    <h2>ARRABBITA PASTA</h2>
+                    
+                    <h3>RS.340 / 370:00/-</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+    
+            </div> 
+    
+           
+    
+            </div> 
+
+    </div>
+
+
+<!----------------------------------------------- DESSERT -------------------------------------------------->
+
+<div class="menu" id="Menu11">
+    <h1><span>DESSERT</span></h1>
+
+    <div class="menu_box">
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/DESSERT/VANILLA ICECREAM.jpg">
+            </div>
+
+            <div class="menu_info">
+                
+                <h2>VANILLA ICECREAM </h2>
+               
+                <h3>RS.90:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+        
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/DESSERT/STRAWBERRY ICECREAM.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>STRAWBERRY ICECREAM</h2>
+                
+                <h3>RS.90:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/DESSERT/CHOCOLATE ICECREAM.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>CHOCOLATE ICECREAM </h2>
+                
+                <h3>RS.90:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/DESSERT/MANGO ICECREAM.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>MANGO ICECREAM</h2>
+               
+                <h3>RS.90:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/DESSERT/BUTTER SCOTCH ICECREAM.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>BUTTER SCOTCH ICECREAM</h2>
+               
+                <h3>RS.90:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/DESSERT/KESAR PISTA ICECREAM.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>KESAR PISTA ICECREAM</h2>
+               
+                <h3>RS.100:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/DESSERT/GULAB JAMUN.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>GULAB JAMUN </h2>
+               
+                <h3>RS.80:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/DESSERT/GULAB JAMUN WITH ICE CREAM.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>GULAB JAMUN WITH ICE CREAM</h2>
+               
+                <h3>RS.120:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/DESSERT/SIZZLING BROWNIE WITH ICE CREAM.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>SIZZLING BROWNIE WITH ICE CREAM</h2>
+               
+                <h3>RS.199:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/DESSERT/FRUIT SALAD.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>FRUIT SALAD</h2>
+               
+                <h3>RS.120:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/DESSERT/FRUIT SALAD WITH ICECREAM.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>FRUIT SALAD WITH ICECREAM</h2>
+               
+                <h3>RS.150:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/DESSERT/TRIPLE SUNDAE.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>TRIPLE SUNDAE</h2>
+               
+                <h3>RS.220:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        
+        </div> 
+        
+    </div>
+
+
+<!----------------------------------------------- MILKSHAKE, MASTANI & MOCKTAIL ------------------------------------------>
+
+<div class="menu" id="Menu12">
+    <h1><span>MILKSHAKE, MASTANI & MOCKTAIL</span></h1>
+
+    <div class="menu_box">
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MILKSHAKE, MASTANI & MOCKTAIL/MANGO MILK SHAKE.jpg">
+            </div>
+
+            <div class="menu_info">
+                
+                <h2>MANGO MILK SHAKE</h2>
+               
+                <h3>RS.140:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+        
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MILKSHAKE, MASTANI & MOCKTAIL/CHOCOLATE MILK SHAKE.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>CHOCOLATE MILK SHAKE</h2>
+                
+                <h3>RS.140:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MILKSHAKE, MASTANI & MOCKTAIL/VANILLA MILK SHAKE.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>VANILLA MILK SHAKE</h2>
+                
+                <h3>RS.140:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MILKSHAKE, MASTANI & MOCKTAIL/STRAWBERRY MILK SHAKE.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>STRAWBERRY MILK SHAKE</h2>
+               
+                <h3>RS.140:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MILKSHAKE, MASTANI & MOCKTAIL/MANGO MASTANI.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>MANGO MASTANI</h2>
+               
+                <h3>RS.180:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MILKSHAKE, MASTANI & MOCKTAIL/KESAR PISTA MASTANI.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>KESAR PISTA MASTANI</h2>
+               
+                <h3>RS.200:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MILKSHAKE, MASTANI & MOCKTAIL/DRY FRUIT MASTANI.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>DRY FRUIT MASTANI</h2>
+               
+                <h3>RS.180:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MILKSHAKE, MASTANI & MOCKTAIL/CLASSIC MOJITO.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>CLASSIC MOJITO</h2>
+               
+                <h3>RS.150:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MILKSHAKE, MASTANI & MOCKTAIL/PINA COLADA.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>PINA COLADA</h2>
+               
+                <h3>RS.200:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MILKSHAKE, MASTANI & MOCKTAIL/BLUE LAGOON.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>BLUE LAGOON </h2>
+               
+                <h3>RS.170:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MILKSHAKE, MASTANI & MOCKTAIL/STRAWBERRY DELIGHT.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>STRAWBERRY DELIGHT </h2>
+               
+                <h3>RS.170:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MILKSHAKE, MASTANI & MOCKTAIL/ORANGE SUNRISE.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>ORANGE SUNRISE </h2>
+               
+                <h3>RS.160:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MILKSHAKE, MASTANI & MOCKTAIL/FRUIT PUNCH.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>FRUIT PUNCH </h2>
+               
+                <h3>RS.220:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/MILKSHAKE, MASTANI & MOCKTAIL/GREEN COOLER.jpg">
+            </div>
+
+            <div class="menu_info">
+                <h2>GREEN COOLER</h2>
+               
+                <h3>RS.180:00/-</h3>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+        </div>          
+        
+        </div> 
+        
+    </div>
+
+
+        
+  
+
+
+    <footer>
+        <div class="row">
+            <div class="col">
+                <h3>Hotel <div class="underline"><span></span></div></h3>
+                    <a href="https://www.google.com/maps/dir/18.4894366,73.8264562/18.4629202,73.8166237/@18.4765112,73.8132895,15z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu" target="_blank" style="color: white; text-decoration: none;"> <p>Terrace Level, Abhiruchi Mall, S.No.59/1C, Bhide Baug, Sinhagad Road-Vadgaon Budruk,
+                        Pune, India, Maharashtra</p></a>
+                
+               
+            </div>
+            <div class="col">
+                <h3>Contact Us <div class="underline"><span></span></div></h3>
+                
+                <div class="contact-info">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+918048890509" class="phone-number-top" style="color: white;">+918048890509</a>
+                </div>
+                    
+                <br>           
+    
+                <div class="contact-info">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:villageabhiruchi@gmail.com" style="color: white; text-decoration: none;">villageabhiruchi@gmail.com</a>
+                </div>
+            </div>
+            <div class="col">
+                <h3>Opening Hours <div class="underline"><span></span></div></h3>
+                <p>12:01  - 15:30 </p>
+                <p>19:00  - 22:30 </p>
+                <p>Happily Serving You Everyday !!!</p>
+                
+               
+                <br>
+               
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">&copy; 2024 Abhiruchi Gokul. All rights reserved.</p>
+    </footer>
+<div class="overlay" onclick="toggleMenu()"></div>
+</body>
+</html>
